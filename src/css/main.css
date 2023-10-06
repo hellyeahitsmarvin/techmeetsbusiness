@@ -1,0 +1,353 @@
+*{
+    margin:0;
+    padding:0;
+    margin-block-start: 0;
+    margin-block-end: 0;
+    margin-inline-start: 0;
+    margin-inline-end: 0;
+    background-color: ivory;
+}
+
+html {
+    height: 100%;
+    width: 100%;
+    max-width: 1500px;
+    margin: auto;
+}
+
+::selection {
+    background: yellowgreen;
+}
+
+h1, h2, h3, p {
+    font-weight: unset;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+    background-color: transparent;
+}
+
+
+#notification-bar {
+    height: 24px;
+    width: 100%;
+    background-color: black;
+    font-family: 'Jost', sans-serif;
+    color: white;
+    font-size: 12px;
+    text-transform: uppercase;
+    text-align: center;
+    line-height: 24px;
+
+    /* toggle availability on/off */
+    display: none;
+}
+
+#logo-bar {
+    width: 80%;
+    max-width: 1200px;
+    height: 60px;
+    margin: auto;
+    margin-top: 10px;
+    
+    /* center the logo */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#logo-bar img {
+    max-height: 30px;
+}
+
+#stage {
+    height: auto;
+    padding: 10% 10% 5% 10%;
+    
+    text-align: center;
+    text-transform: uppercase;
+}
+
+#stage span.serif {
+    font-family: 'Nanum Myeongjo', serif;
+    font-size: 5em;
+}
+
+#stage span.sans-serif {
+    font-family: 'Jost', sans-serif;
+    font-size: 3em;
+}
+
+.subtitle {
+    padding: 5%;
+    margin: auto;
+    max-width: 450px;
+    height: auto;
+
+    font-family: 'Jost', sans-serif;
+    font-size: 1em;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+button {
+    margin: auto;
+    padding: 10px 30px;
+    font-family: 'Nanum Myeongjo', serif;
+    font-size: 1em;
+    background: transparent;
+
+    border-radius: 25px;
+    border: solid 1px;
+    box-shadow: 3px 3px black;
+
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    background: black;
+    border: none;
+    color: white;
+}
+
+button:active {
+    font-size: 0.9em;
+}
+
+section {
+    position: relative;
+    margin: 5% 0 0 0;
+    padding: 0 10%;
+}
+
+.section-header {
+    padding-left: 10px;
+    border-bottom: solid 1px black;
+
+    font-family: 'Jost', sans-serif;
+    font-size: 1em;
+    line-height: 2em;
+    text-transform: uppercase;
+}
+
+.section-hero {
+    display: flex;
+    flex-flow: row wrap;
+
+    padding-bottom: 20px;
+}
+
+.section-hero h2 {
+    flex: 40%;
+    padding: 10px;
+
+    font-family: 'Nanum Myeongjo', serif;
+    font-size: 3em;
+    text-transform: uppercase;
+}
+
+.section-hero div {
+    flex: 55%;
+    padding: 10px;
+}
+
+.section-hero div p {
+font-family: 'Nanum Myeongjo', serif;
+    font-size: 1em;
+    line-height: 2em;
+}
+
+.section-skills {
+    display: flex;
+    flex-flow: row wrap;
+    padding-left: 43.5%;
+}
+
+.section-skills div {
+    flex: 45%;
+    padding: 0 10px 30px 0;
+}
+
+h3 {
+    font-family: 'Nanum Myeongjo', serif;
+    font-size: 1.6em;
+    line-height: 2.4em;
+    text-transform: capitalize;
+}
+
+li {
+    list-style: none;
+
+    font-family: 'Jost', sans-serif;
+    font-size: 1em;
+    line-height: 1.4em;
+    text-transform: uppercase;
+}
+
+#about img {
+    height: 30vh;
+    padding: 5%;
+    display: block;
+    margin:auto;
+}
+
+#sleeve {
+    margin-top: 10vh;
+    width: 100%;
+
+    font-family: 'Nanum Myeongjo', serif;
+    font-size: 3em;
+    text-transform: uppercase;
+
+    display: flex;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.banner {
+    animation: animate_text 30s linear infinite;
+}
+
+.banner span {
+    padding-left: 4vw;
+}
+
+@keyframes animate_text {
+    from {
+      transform: translate3d(0, 0, 0);
+    }
+    to {
+      transform: translate3d(-100%, 0, 0);
+    }
+}
+
+footer {
+    margin-top: 0;
+    padding: 30px 10% 40px 10%;
+
+    color: ivory;
+    background: rgb(2,0,36);
+    background: linear-gradient(0deg, rgba(2,0,36,1) 0%, rgba(136,136,136,1) 65%, rgba(254,254,237,1) 100%);
+}
+
+#contact {
+    background-color: transparent;
+    text-align: center;
+    padding-bottom: 120px;
+}
+
+#contact a {
+    padding: 0 10px;
+}
+
+#contact button {
+    background: ivory;
+    padding: 10px 20px;
+    margin-bottom: 15px;
+    min-width: 220px;
+}
+
+#contact button:hover {
+    background: black;
+}
+
+#legal {
+    background-color: transparent;
+    font-family: 'Jost', sans-serif;
+    font-size: 0.8em;
+    text-transform: uppercase;
+}
+
+#legal-links {
+    display: inline;
+    padding-right: 15px;
+    background-color: transparent;
+    color: white;
+    text-decoration: overline;
+}
+
+#legal-links a {
+    padding-right: 15px;
+}
+
+#copyright {
+    float: right;
+    background-color: transparent;
+    text-decoration: none;
+}
+
+
+/* Media Queries TABLET width (only overrides) */
+@media(max-width: 1024px) {
+
+    #stage span.serif {
+        font-size: 3em;
+    }
+    
+    #stage span.sans-serif {
+        font-size: 2em;
+    }
+
+    .section-hero {
+        padding-bottom: 0;
+    }
+
+    .section-skills {
+        padding-left: 10px;
+    }
+
+}
+
+/* Media Queries MOBILE (only overrides) */
+@media(max-width: 480px) {
+
+    #notification-bar {
+        margin-bottom: calc(20% - 24px);
+    }
+
+    #stage {
+        padding-top: 25%;
+    }
+
+    #stage span.sans-serif {
+        font-size: 1.2em;
+    }
+
+    .subtitle {
+        padding: 20% 10%;
+    }
+
+    section {
+        margin: 10% 0 0 0;
+    }
+
+    .section-skills div {
+        flex: 100%;
+        padding: 0 10px 15px 0;
+
+    }
+
+    #contact {
+        padding-bottom: 80px;
+    }
+
+    #legal {
+        height: 40px;
+    }
+
+    #legal-links {
+        display: block;
+        padding-bottom: 15px;
+    }
+
+    #legal-links a {
+        padding-right: 20px;
+    }
+
+    #copyright {
+        float: unset;
+    }
+}
