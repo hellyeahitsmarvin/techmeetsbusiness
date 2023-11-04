@@ -95,6 +95,8 @@ a {
 button {
     margin: auto;
     padding: 10px 30px;
+
+    color: black;
     font-family: 'Nanum Myeongjo', serif;
     font-size: 1em;
     background: transparent;
@@ -107,14 +109,21 @@ button {
     transition: 0.3s;
 }
 
-button:hover {
-    background: black;
-    border: none;
-    color: white;
-}
+/* Media Query for buttons (only overrides) */
+@media (pointer: fine) {
+    button:hover {
+        background: black;
+        border: none;
+        color: white;
+    }
 
-button:active {
-    font-size: 0.9em;
+    #contact button:hover {
+        background: black;
+    }
+    
+    button:active {
+        font-size: 0.9em;
+    }
 }
 
 section {
@@ -250,10 +259,6 @@ footer {
     min-width: 220px;
 }
 
-#contact button:hover {
-    background: black;
-}
-
 #legal {
     background-color: transparent;
     font-family: 'Jost', sans-serif;
@@ -278,7 +283,6 @@ footer {
     background-color: transparent;
     text-decoration: none;
 }
-
 
 /* Media Queries TABLET width (only overrides) */
 @media(max-width: 1024px) {
@@ -350,18 +354,4 @@ footer {
     #copyright {
         float: unset;
     }
-
-    /* Ripple effect for buttons*/
-    .ripple {
-        background-position: center;
-        transition: background 0.5s;
-      }
-      .ripple:hover {
-        background: black radial-gradient(circle, transparent 1%, black 1%) center/15000%;
-      }
-      .ripple:active {
-        background-color: ivory;
-        background-size: 100%;
-        transition: background 0s;
-      }
 }
