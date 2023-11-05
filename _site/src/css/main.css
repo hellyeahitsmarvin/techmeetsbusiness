@@ -19,7 +19,7 @@ html {
     background: yellowgreen;
 }
 
-h1, h2, h3, p {
+h1, h2, h3, h4, p {
     font-weight: unset;
 }
 
@@ -160,7 +160,7 @@ section {
 
 .section-hero div {
     flex: 55%;
-    padding: 10px;
+    padding: 30px 10px 10px 10px;
 }
 
 .section-hero div p {
@@ -297,6 +297,10 @@ footer {
 
     .section-hero {
         padding-bottom: 0;
+    }
+
+    .section-hero div {
+        padding: 10px;
     }
 
     .section-skills {
