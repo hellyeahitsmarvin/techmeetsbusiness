@@ -125,6 +125,7 @@ button {
         font-size: 0.9em;
     }
 }
+/* End */
 
 section {
     position: relative;
@@ -170,7 +171,8 @@ font-family: 'Nanum Myeongjo', serif;
 }
 
 .section-skills {
-    display: flex;
+    /* display: flex; */
+    display: none;
     flex-flow: row wrap;
     padding-left: 43.5%;
 }
