@@ -171,8 +171,8 @@ font-family: 'Nanum Myeongjo', serif;
 }
 
 .section-skills {
-    /* display: flex; */
-    display: none;
+    display: flex; 
+    /* display: none;*/
     flex-flow: row wrap;
     padding-left: 43.5%;
 }
