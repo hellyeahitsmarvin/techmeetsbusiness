@@ -2,7 +2,3 @@
 User-agent: *
 Disallow: /imprint.html
 Disallow: /privacy.html
-
-# Images
-User-agent: Googlebot-Image
-Disallow: /
